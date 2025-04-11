@@ -1,0 +1,4 @@
+[ 50%] Built target gtest_main
+[ 50%] Built target gtest
+[ 75%] Built target coordinate_transformer
+[ 87%] [32mBuilding CXX object CMakeFiles/test_coordinate_transformer.dir/test/test_coordinate_transformer.cpp.o[0m

@@ -1,0 +1,92 @@
+Start testing: Apr 10 21:50 +05
+----------------------------------------------------------
+1/1 Testing: test_coordinate_transformer
+1/1 Test: test_coordinate_transformer
+Command: "/usr/bin/python3" "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/user/ros2_ws/build/coordinate_transformer/test_results/coordinate_transformer/test_coordinate_transformer.gtest.xml" "--package-name" "coordinate_transformer" "--output-file" "/home/user/ros2_ws/build/coordinate_transformer/ament_cmake_gtest/test_coordinate_transformer.txt" "--command" "/home/user/ros2_ws/build/coordinate_transformer/test_coordinate_transformer" "--gtest_output=xml:/home/user/ros2_ws/build/coordinate_transformer/test_results/coordinate_transformer/test_coordinate_transformer.gtest.xml"
+Directory: /home/user/ros2_ws/build/coordinate_transformer
+"test_coordinate_transformer" start time: Apr 10 21:50 +05
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/home/user/ros2_ws/build/coordinate_transformer':
+ - /home/user/ros2_ws/build/coordinate_transformer/test_coordinate_transformer --gtest_output=xml:/home/user/ros2_ws/build/coordinate_transformer/test_results/coordinate_transformer/test_coordinate_transformer.gtest.xml
+[==========] Running 6 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 6 tests from CoordinateTransformerTest
+[ RUN      ] CoordinateTransformerTest.ConvertSuccess
+unknown file: Failure
+C++ exception with description "context is already initialized" thrown in SetUp().
+
+[  FAILED  ] CoordinateTransformerTest.ConvertSuccess (0 ms)
+[ RUN      ] CoordinateTransformerTest.OutOfBounds
+[       OK ] CoordinateTransformerTest.OutOfBounds (17 ms)
+[ RUN      ] CoordinateTransformerTest.TransformNotFound
+[ERROR] [1744303856.920437009] [test_node]: Transform nonexistent_frame->frameB not found
+[       OK ] CoordinateTransformerTest.TransformNotFound (7 ms)
+[ RUN      ] CoordinateTransformerTest.SameFrame
+[ERROR] [1744303856.928064942] [test_node]: Transform frameA->frameA not found
+/home/user/ros2_ws/src/coordinate_transformer/test/test_coordinate_transformer.cpp:105: Failure
+Expected equality of these values:
+  status
+    Which is: 4-byte object <02-00 00-00>
+  ResultStatus::SUCCESS
+    Which is: 4-byte object <00-00 00-00>
+
+/home/user/ros2_ws/src/coordinate_transformer/test/test_coordinate_transformer.cpp:106: Failure
+Expected equality of these values:
+  output.header.frame_id
+    Which is: ""
+  "frameA"
+
+/home/user/ros2_ws/src/coordinate_transformer/test/test_coordinate_transformer.cpp:107: Failure
+Expected equality of these values:
+  output.pose.position.x
+    Which is: 0
+  1.0
+    Which is: 1
+
+/home/user/ros2_ws/src/coordinate_transformer/test/test_coordinate_transformer.cpp:108: Failure
+Expected equality of these values:
+  output.pose.position.y
+    Which is: 0
+  2.0
+    Which is: 2
+
+/home/user/ros2_ws/src/coordinate_transformer/test/test_coordinate_transformer.cpp:109: Failure
+Expected equality of these values:
+  output.pose.position.z
+    Which is: 0
+  3.0
+    Which is: 3
+
+[  FAILED  ] CoordinateTransformerTest.SameFrame (7 ms)
+[ RUN      ] CoordinateTransformerTest.SourceFrameNotFound
+[ERROR] [1744303856.935620624] [test_node]: Transform nonexistent_frame->frameB not found
+[       OK ] CoordinateTransformerTest.SourceFrameNotFound (7 ms)
+[ RUN      ] CoordinateTransformerTest.TargetFrameNotFound
+[ERROR] [1744303856.942908966] [test_node]: Transform frameA->nonexistent_frame not found
+[       OK ] CoordinateTransformerTest.TargetFrameNotFound (7 ms)
+[----------] 6 tests from CoordinateTransformerTest (48 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 1 test suite ran. (48 ms total)
+[  PASSED  ] 4 tests.
+[  FAILED  ] 2 tests, listed below:
+[  FAILED  ] CoordinateTransformerTest.ConvertSuccess
+[  FAILED  ] CoordinateTransformerTest.SameFrame
+
+ 2 FAILED TESTS
+-- run_test.py: return code 1
+-- run_test.py: inject classname prefix into gtest result file '/home/user/ros2_ws/build/coordinate_transformer/test_results/coordinate_transformer/test_coordinate_transformer.gtest.xml'
+-- run_test.py: verify result file '/home/user/ros2_ws/build/coordinate_transformer/test_results/coordinate_transformer/test_coordinate_transformer.gtest.xml'
+<end of output>
+Test time =   0.27 sec
+----------------------------------------------------------
+Test Failed.
+"test_coordinate_transformer" end time: Apr 10 21:50 +05
+"test_coordinate_transformer" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Apr 10 21:50 +05
+
+gtest =   0.27 sec*proc
+

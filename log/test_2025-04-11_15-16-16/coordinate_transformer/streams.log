@@ -1,0 +1,84 @@
+[0.045s] Invoking command in '/home/user/ros2_ws/build/coordinate_transformer': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com ROS_PACKAGE_PATH=/home/user/ros2_ws/src/coordinate_transformer:${ROS_PACKAGE_PATH} /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[0.061s] UpdateCTestConfiguration  from :/home/user/ros2_ws/build/coordinate_transformer/CTestConfiguration.ini
+[0.061s] Parse Config file:/home/user/ros2_ws/build/coordinate_transformer/CTestConfiguration.ini
+[0.061s]    Site: user-pc
+[0.062s]    Build name: (empty)
+[0.062s]  Add coverage exclude regular expressions.
+[0.062s] Create new tag: 20250411-1016 - Experimental
+[0.062s] UpdateCTestConfiguration  from :/home/user/ros2_ws/build/coordinate_transformer/CTestConfiguration.ini
+[0.062s] Parse Config file:/home/user/ros2_ws/build/coordinate_transformer/CTestConfiguration.ini
+[0.062s] Test project /home/user/ros2_ws/build/coordinate_transformer
+[0.062s] Constructing a list of tests
+[0.062s] Done constructing a list of tests
+[0.062s] Updating test list for fixtures
+[0.062s] Added 0 tests to meet fixture requirements
+[0.062s] Checking test dependency graph...
+[0.062s] Checking test dependency graph end
+[0.063s] test 1
+[0.063s]     Start 1: test_coordinate_transformer
+[0.063s] 
+[0.063s] 1: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/user/ros2_ws/build/coordinate_transformer/test_results/coordinate_transformer/test_coordinate_transformer.gtest.xml" "--package-name" "coordinate_transformer" "--output-file" "/home/user/ros2_ws/build/coordinate_transformer/ament_cmake_gtest/test_coordinate_transformer.txt" "--command" "/home/user/ros2_ws/build/coordinate_transformer/test_coordinate_transformer" "--gtest_output=xml:/home/user/ros2_ws/build/coordinate_transformer/test_results/coordinate_transformer/test_coordinate_transformer.gtest.xml"
+[0.063s] 1: Working Directory: /home/user/ros2_ws/build/coordinate_transformer
+[0.063s] 1: Test timeout computed to be: 60
+[0.119s] 1: -- run_test.py: invoking following command in '/home/user/ros2_ws/build/coordinate_transformer':
+[0.120s] 1:  - /home/user/ros2_ws/build/coordinate_transformer/test_coordinate_transformer --gtest_output=xml:/home/user/ros2_ws/build/coordinate_transformer/test_results/coordinate_transformer/test_coordinate_transformer.gtest.xml
+[0.146s] 1: [==========] Running 10 tests from 1 test suite.
+[0.146s] 1: [----------] Global test environment set-up.
+[0.147s] 1: [----------] 10 tests from CoordinateTransformerTest
+[0.147s] 1: [ RUN      ] CoordinateTransformerTest.TransformTest
+[0.161s] 1: /home/user/ros2_ws/src/coordinate_transformer/test/test_coordinate_transformer.cpp:90: Failure
+[0.161s] 1: Expected equality of these values:
+[0.162s] 1:   status
+[0.162s] 1:     Which is: 4-byte object <01-00 00-00>
+[0.162s] 1:   ResultStatus::SUCCESS
+[0.162s] 1:     Which is: 4-byte object <00-00 00-00>
+[0.162s] 1: 
+[0.164s] 1: [  FAILED  ] CoordinateTransformerTest.TransformTest (17 ms)
+[0.164s] 1: [ RUN      ] CoordinateTransformerTest.ConvertSuccess
+[0.171s] 1: [       OK ] CoordinateTransformerTest.ConvertSuccess (7 ms)
+[0.171s] 1: [ RUN      ] CoordinateTransformerTest.OutOfBounds
+[0.178s] 1: [       OK ] CoordinateTransformerTest.OutOfBounds (6 ms)
+[0.178s] 1: [ RUN      ] CoordinateTransformerTest.TransformNotFound
+[0.183s] 1: [ERROR] [1744366576.926854582] [test_node]: Transform nonexistent_frame->frameB not found
+[0.185s] 1: [       OK ] CoordinateTransformerTest.TransformNotFound (6 ms)
+[0.185s] 1: [ RUN      ] CoordinateTransformerTest.SameFrame
+[0.192s] 1: [       OK ] CoordinateTransformerTest.SameFrame (6 ms)
+[0.192s] 1: [ RUN      ] CoordinateTransformerTest.SourceFrameNotFound
+[0.197s] 1: [ERROR] [1744366576.940743523] [test_node]: Transform nonexistent_frame->frameB not found
+[0.199s] 1: [       OK ] CoordinateTransformerTest.SourceFrameNotFound (7 ms)
+[0.199s] 1: [ RUN      ] CoordinateTransformerTest.TargetFrameNotFound
+[0.204s] 1: [ERROR] [1744366576.948041133] [test_node]: Transform frameA->nonexistent_frame not found
+[0.206s] 1: [       OK ] CoordinateTransformerTest.TargetFrameNotFound (7 ms)
+[0.206s] 1: [ RUN      ] CoordinateTransformerTest.Rotation90
+[0.213s] 1: [       OK ] CoordinateTransformerTest.Rotation90 (6 ms)
+[0.214s] 1: [ RUN      ] CoordinateTransformerTest.Rotation180
+[0.220s] 1: [       OK ] CoordinateTransformerTest.Rotation180 (6 ms)
+[0.220s] 1: [ RUN      ] CoordinateTransformerTest.Rotation270
+[0.227s] 1: [       OK ] CoordinateTransformerTest.Rotation270 (6 ms)
+[0.227s] 1: [----------] 10 tests from CoordinateTransformerTest (81 ms total)
+[0.228s] 1: 
+[0.228s] 1: [----------] Global test environment tear-down
+[0.228s] 1: [==========] 10 tests from 1 test suite ran. (81 ms total)
+[0.228s] 1: [  PASSED  ] 9 tests.
+[0.228s] 1: [  FAILED  ] 1 test, listed below:
+[0.228s] 1: [  FAILED  ] CoordinateTransformerTest.TransformTest
+[0.228s] 1: 
+[0.228s] 1:  1 FAILED TEST
+[0.334s] 1: -- run_test.py: return code 1
+[0.335s] 1: -- run_test.py: inject classname prefix into gtest result file '/home/user/ros2_ws/build/coordinate_transformer/test_results/coordinate_transformer/test_coordinate_transformer.gtest.xml'
+[0.335s] 1: -- run_test.py: verify result file '/home/user/ros2_ws/build/coordinate_transformer/test_results/coordinate_transformer/test_coordinate_transformer.gtest.xml'
+[0.347s] 1/1 Test #1: test_coordinate_transformer ......***Failed    0.29 sec
+[0.348s] 
+[0.348s] 0% tests passed[0;0m, [0;31m1 tests failed[0;0m out of 1
+[0.348s] 
+[0.348s] Label Time Summary:
+[0.348s] gtest    =   0.29 sec*proc (1 test)
+[0.349s] 
+[0.349s] Total Test time (real) =   0.29 sec
+[0.349s] 
+[0.349s] The following tests FAILED:
+[0.349s] 	[0;31m  1 - test_coordinate_transformer (Failed)[0;0m
+[0.350s] Errors while running CTest
+[0.350s] Output from these tests are in: /home/user/ros2_ws/build/coordinate_transformer/Testing/Temporary/LastTest.log
+[0.350s] Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.
+[0.352s] Invoked command in '/home/user/ros2_ws/build/coordinate_transformer' returned '8': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com ROS_PACKAGE_PATH=/home/user/ros2_ws/src/coordinate_transformer:${ROS_PACKAGE_PATH} /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process

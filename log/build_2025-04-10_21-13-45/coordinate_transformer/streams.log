@@ -1,0 +1,22 @@
+[0.020s] Invoking command in '/home/user/ros2_ws/build/coordinate_transformer': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/user/ros2_ws/build/coordinate_transformer -- -j12 -l12
+[0.119s] [ 25%] Built target gtest_main
+[0.119s] [ 50%] Built target gtest
+[0.128s] [ 62%] [32mBuilding CXX object CMakeFiles/coordinate_transformer.dir/src/coordinate_transformer.cpp.o[0m
+[2.386s] [01m[K/home/user/ros2_ws/src/coordinate_transformer/src/coordinate_transformer.cpp:[m[K In member function ‘[01m[Kcoordinate_transformer::ResultStatus coordinate_transformer::CoordinateTransformer::[01;32m[KinverseConvert[m[K(const geometry_msgs::msg::PoseStamped&, geometry_msgs::msg::PoseStamped&, const std::string&)[m[K’:
+[2.386s] [01m[K/home/user/ros2_ws/src/coordinate_transformer/src/coordinate_transformer.cpp:56:37:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kgeometry_msgs::msg::PoseStamped_<std::allocator<void> >::_pose_type[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Pose_<std::allocator<void> >[m[K’} and ‘[01m[Kgeometry_msgs::msg::Transform[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Transform_<std::allocator<void> >[m[K’})
+[2.386s]    56 |   output.pose = tf2::toMsg(result_tf[01;31m[K)[m[K;
+[2.386s]       |                                     [01;31m[K^[m[K
+[2.386s] In file included from [01m[K/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp:25[m[K,
+[2.387s]                  from [01m[K/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp:7[m[K,
+[2.387s]                  from [01m[K/home/user/ros2_ws/src/coordinate_transformer/include/coordinate_transformer/coordinate_transformer.hpp:8[m[K,
+[2.387s]                  from [01m[K/home/user/ros2_ws/src/coordinate_transformer/src/coordinate_transformer.cpp:1[m[K:
+[2.387s] [01m[K/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:41:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr geometry_msgs::msg::Pose_<std::allocator<void> >& geometry_msgs::msg::Pose_<std::allocator<void> >::[01;32m[Koperator=[m[K(const geometry_msgs::msg::Pose_<std::allocator<void> >&)[m[K’
+[2.387s]    41 | struct [01;36m[KPose_[m[K
+[2.387s]       |        [01;36m[K^~~~~[m[K
+[2.387s] [01m[K/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:41:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kgeometry_msgs::msg::Transform[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Transform_<std::allocator<void> >[m[K’} to ‘[01m[Kconst geometry_msgs::msg::Pose_<std::allocator<void> >&[m[K’
+[2.388s] [01m[K/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:41:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr geometry_msgs::msg::Pose_<std::allocator<void> >& geometry_msgs::msg::Pose_<std::allocator<void> >::[01;32m[Koperator=[m[K(geometry_msgs::msg::Pose_<std::allocator<void> >&&)[m[K’
+[2.388s] [01m[K/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:41:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kgeometry_msgs::msg::Transform[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Transform_<std::allocator<void> >[m[K’} to ‘[01m[Kgeometry_msgs::msg::Pose_<std::allocator<void> >&&[m[K’
+[3.082s] gmake[2]: *** [CMakeFiles/coordinate_transformer.dir/build.make:76: CMakeFiles/coordinate_transformer.dir/src/coordinate_transformer.cpp.o] Ошибка 1
+[3.083s] gmake[1]: *** [CMakeFiles/Makefile2:157: CMakeFiles/coordinate_transformer.dir/all] Ошибка 2
+[3.083s] gmake: *** [Makefile:146: all] Ошибка 2
+[3.088s] Invoked command in '/home/user/ros2_ws/build/coordinate_transformer' returned '2': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/user/ros2_ws/build/coordinate_transformer -- -j12 -l12

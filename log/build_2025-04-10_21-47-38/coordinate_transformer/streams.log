@@ -1,0 +1,59 @@
+[0.017s] Invoking command in '/home/user/ros2_ws/build/coordinate_transformer': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/user/ros2_ws/src/coordinate_transformer -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/user/ros2_ws/install/coordinate_transformer
+[0.097s] -- The C compiler identification is GNU 13.3.0
+[0.164s] -- The CXX compiler identification is GNU 13.3.0
+[0.192s] -- Detecting C compiler ABI info
+[0.337s] -- Detecting C compiler ABI info - done
+[0.346s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.347s] -- Detecting C compile features
+[0.347s] -- Detecting C compile features - done
+[0.365s] -- Detecting CXX compiler ABI info
+[0.517s] -- Detecting CXX compiler ABI info - done
+[0.526s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.527s] -- Detecting CXX compile features
+[0.527s] -- Detecting CXX compile features - done
+[0.538s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.800s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.028s] -- Found rclcpp: 28.1.8 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.149s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.189s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.234s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.281s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.448s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.462s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.660s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.689s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.722s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.861s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[1.913s] -- Found tf2: 0.36.9 (/opt/ros/jazzy/share/tf2/cmake)
+[1.927s] -- Found tf2_ros: 0.36.9 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[2.153s] -- Found tf2_geometry_msgs: 0.36.9 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)
+[2.204s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[2.205s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.205s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.240s] -- Found ament_cmake_gtest: 2.5.3 (/opt/ros/jazzy/share/ament_cmake_gtest/cmake)
+[2.251s] -- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.254s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.394s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.395s] -- Found Threads: TRUE  
+[2.500s] -- Configuring done (2.5s)
+[2.524s] -- Generating done (0.0s)
+[2.526s] [33mCMake Warning:
+[2.526s]   Manually-specified variables were not used by the project:
+[2.526s] 
+[2.526s]     CATKIN_INSTALL_INTO_PREFIX_ROOT
+[2.526s] 
+[2.526s] [0m
+[2.531s] -- Build files have been written to: /home/user/ros2_ws/build/coordinate_transformer
+[2.545s] Invoked command in '/home/user/ros2_ws/build/coordinate_transformer' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/user/ros2_ws/src/coordinate_transformer -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/user/ros2_ws/install/coordinate_transformer
+[2.547s] Invoking command in '/home/user/ros2_ws/build/coordinate_transformer': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/user/ros2_ws/build/coordinate_transformer -- -j12 -l12
+[2.647s] [ 25%] Built target gtest_main
+[2.647s] [ 50%] Built target gtest
+[2.654s] [ 62%] [32mBuilding CXX object CMakeFiles/coordinate_transformer.dir/src/coordinate_transformer.cpp.o[0m
+[3.021s] In file included from [01m[K/home/user/ros2_ws/src/coordinate_transformer/src/coordinate_transformer.cpp:1[m[K:
+[3.021s] [01m[K/home/user/ros2_ws/src/coordinate_transformer/include/coordinate_transformer/coordinate_transformer.hpp:113:2:[m[K [01;31m[Kerror: [m[K#endif without #if
+[3.021s]   113 | #[01;31m[Kendif[m[K // COORDINATE_TRANSFORMER_HPP
+[3.021s]       |  [01;31m[K^~~~~[m[K
+[5.678s] gmake[2]: *** [CMakeFiles/coordinate_transformer.dir/build.make:76: CMakeFiles/coordinate_transformer.dir/src/coordinate_transformer.cpp.o] Ошибка 1
+[5.679s] gmake[1]: *** [CMakeFiles/Makefile2:157: CMakeFiles/coordinate_transformer.dir/all] Ошибка 2
+[5.679s] gmake: *** [Makefile:146: all] Ошибка 2
+[5.683s] Invoked command in '/home/user/ros2_ws/build/coordinate_transformer' returned '2': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/user/ros2_ws/build/coordinate_transformer -- -j12 -l12

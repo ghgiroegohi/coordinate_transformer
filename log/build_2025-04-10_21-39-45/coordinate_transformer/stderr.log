@@ -1,0 +1,13 @@
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CATKIN_INSTALL_INTO_PREFIX_ROOT
+
+[0m
+[01m[K/home/user/ros2_ws/src/coordinate_transformer/test/test_coordinate_transformer.cpp:7:10:[m[K [01;31m[Kfatal error: [m[Ktf2_geometry_msgs/tf2_geometry_msgs.h: Нет такого файла или каталога
+    7 | #include [01;31m[K"tf2_geometry_msgs/tf2_geometry_msgs.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/test_coordinate_transformer.dir/build.make:76: CMakeFiles/test_coordinate_transformer.dir/test/test_coordinate_transformer.cpp.o] Ошибка 1
+gmake[1]: *** [CMakeFiles/Makefile2:185: CMakeFiles/test_coordinate_transformer.dir/all] Ошибка 2
+gmake: *** [Makefile:146: all] Ошибка 2

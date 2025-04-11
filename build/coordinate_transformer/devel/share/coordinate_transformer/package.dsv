@@ -1,0 +1,3 @@
+source;share/coordinate_transformer/hook/ros_package_path.ps1
+source;share/coordinate_transformer/hook/ros_package_path.dsv
+source;share/coordinate_transformer/hook/ros_package_path.sh

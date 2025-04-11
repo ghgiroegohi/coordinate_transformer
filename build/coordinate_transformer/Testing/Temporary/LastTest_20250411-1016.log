@@ -1,0 +1,68 @@
+Start testing: Apr 11 15:16 +05
+----------------------------------------------------------
+1/1 Testing: test_coordinate_transformer
+1/1 Test: test_coordinate_transformer
+Command: "/usr/bin/python3" "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/user/ros2_ws/build/coordinate_transformer/test_results/coordinate_transformer/test_coordinate_transformer.gtest.xml" "--package-name" "coordinate_transformer" "--output-file" "/home/user/ros2_ws/build/coordinate_transformer/ament_cmake_gtest/test_coordinate_transformer.txt" "--command" "/home/user/ros2_ws/build/coordinate_transformer/test_coordinate_transformer" "--gtest_output=xml:/home/user/ros2_ws/build/coordinate_transformer/test_results/coordinate_transformer/test_coordinate_transformer.gtest.xml"
+Directory: /home/user/ros2_ws/build/coordinate_transformer
+"test_coordinate_transformer" start time: Apr 11 15:16 +05
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/home/user/ros2_ws/build/coordinate_transformer':
+ - /home/user/ros2_ws/build/coordinate_transformer/test_coordinate_transformer --gtest_output=xml:/home/user/ros2_ws/build/coordinate_transformer/test_results/coordinate_transformer/test_coordinate_transformer.gtest.xml
+[==========] Running 10 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 10 tests from CoordinateTransformerTest
+[ RUN      ] CoordinateTransformerTest.TransformTest
+/home/user/ros2_ws/src/coordinate_transformer/test/test_coordinate_transformer.cpp:90: Failure
+Expected equality of these values:
+  status
+    Which is: 4-byte object <01-00 00-00>
+  ResultStatus::SUCCESS
+    Which is: 4-byte object <00-00 00-00>
+
+[  FAILED  ] CoordinateTransformerTest.TransformTest (17 ms)
+[ RUN      ] CoordinateTransformerTest.ConvertSuccess
+[       OK ] CoordinateTransformerTest.ConvertSuccess (7 ms)
+[ RUN      ] CoordinateTransformerTest.OutOfBounds
+[       OK ] CoordinateTransformerTest.OutOfBounds (6 ms)
+[ RUN      ] CoordinateTransformerTest.TransformNotFound
+[ERROR] [1744366576.926854582] [test_node]: Transform nonexistent_frame->frameB not found
+[       OK ] CoordinateTransformerTest.TransformNotFound (6 ms)
+[ RUN      ] CoordinateTransformerTest.SameFrame
+[       OK ] CoordinateTransformerTest.SameFrame (6 ms)
+[ RUN      ] CoordinateTransformerTest.SourceFrameNotFound
+[ERROR] [1744366576.940743523] [test_node]: Transform nonexistent_frame->frameB not found
+[       OK ] CoordinateTransformerTest.SourceFrameNotFound (7 ms)
+[ RUN      ] CoordinateTransformerTest.TargetFrameNotFound
+[ERROR] [1744366576.948041133] [test_node]: Transform frameA->nonexistent_frame not found
+[       OK ] CoordinateTransformerTest.TargetFrameNotFound (7 ms)
+[ RUN      ] CoordinateTransformerTest.Rotation90
+[       OK ] CoordinateTransformerTest.Rotation90 (6 ms)
+[ RUN      ] CoordinateTransformerTest.Rotation180
+[       OK ] CoordinateTransformerTest.Rotation180 (6 ms)
+[ RUN      ] CoordinateTransformerTest.Rotation270
+[       OK ] CoordinateTransformerTest.Rotation270 (6 ms)
+[----------] 10 tests from CoordinateTransformerTest (81 ms total)
+
+[----------] Global test environment tear-down
+[==========] 10 tests from 1 test suite ran. (81 ms total)
+[  PASSED  ] 9 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] CoordinateTransformerTest.TransformTest
+
+ 1 FAILED TEST
+-- run_test.py: return code 1
+-- run_test.py: inject classname prefix into gtest result file '/home/user/ros2_ws/build/coordinate_transformer/test_results/coordinate_transformer/test_coordinate_transformer.gtest.xml'
+-- run_test.py: verify result file '/home/user/ros2_ws/build/coordinate_transformer/test_results/coordinate_transformer/test_coordinate_transformer.gtest.xml'
+<end of output>
+Test time =   0.29 sec
+----------------------------------------------------------
+Test Failed.
+"test_coordinate_transformer" end time: Apr 11 15:16 +05
+"test_coordinate_transformer" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Apr 11 15:16 +05
+
+gtest =   0.29 sec*proc
+

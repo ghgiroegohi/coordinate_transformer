@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="10" failures="0" disabled="0" errors="0" time="0.078" timestamp="2025-04-11T15:45:05.012" name="AllTests">
+  <testsuite name="CoordinateTransformerTest" tests="10" failures="0" disabled="0" skipped="0" errors="0" time="0.078" timestamp="2025-04-11T15:45:05.012">
+    <testcase name="TransformTest" file="/home/user/ros2_ws/src/coordinate_transformer/test/test_coordinate_transformer.cpp" line="91" status="run" result="completed" time="0.018" timestamp="2025-04-11T15:45:05.012" classname="coordinate_transformer.CoordinateTransformerTest" />
+    <testcase name="ConvertSuccess" file="/home/user/ros2_ws/src/coordinate_transformer/test/test_coordinate_transformer.cpp" line="137" status="run" result="completed" time="0.006" timestamp="2025-04-11T15:45:05.031" classname="coordinate_transformer.CoordinateTransformerTest" />
+    <testcase name="OutOfBounds" file="/home/user/ros2_ws/src/coordinate_transformer/test/test_coordinate_transformer.cpp" line="167" status="run" result="completed" time="0.006" timestamp="2025-04-11T15:45:05.038" classname="coordinate_transformer.CoordinateTransformerTest" />
+    <testcase name="TransformNotFound" file="/home/user/ros2_ws/src/coordinate_transformer/test/test_coordinate_transformer.cpp" line="194" status="run" result="completed" time="0.006" timestamp="2025-04-11T15:45:05.044" classname="coordinate_transformer.CoordinateTransformerTest" />
+    <testcase name="SameFrame" file="/home/user/ros2_ws/src/coordinate_transformer/test/test_coordinate_transformer.cpp" line="220" status="run" result="completed" time="0.006" timestamp="2025-04-11T15:45:05.051" classname="coordinate_transformer.CoordinateTransformerTest" />
+    <testcase name="SourceFrameNotFound" file="/home/user/ros2_ws/src/coordinate_transformer/test/test_coordinate_transformer.cpp" line="250" status="run" result="completed" time="0.006" timestamp="2025-04-11T15:45:05.058" classname="coordinate_transformer.CoordinateTransformerTest" />
+    <testcase name="TargetFrameNotFound" file="/home/user/ros2_ws/src/coordinate_transformer/test/test_coordinate_transformer.cpp" line="276" status="run" result="completed" time="0.006" timestamp="2025-04-11T15:45:05.064" classname="coordinate_transformer.CoordinateTransformerTest" />
+    <testcase name="Rotation90" file="/home/user/ros2_ws/src/coordinate_transformer/test/test_coordinate_transformer.cpp" line="302" status="run" result="completed" time="0.006" timestamp="2025-04-11T15:45:05.071" classname="coordinate_transformer.CoordinateTransformerTest" />
+    <testcase name="Rotation180" file="/home/user/ros2_ws/src/coordinate_transformer/test/test_coordinate_transformer.cpp" line="345" status="run" result="completed" time="0.006" timestamp="2025-04-11T15:45:05.078" classname="coordinate_transformer.CoordinateTransformerTest" />
+    <testcase name="Rotation270" file="/home/user/ros2_ws/src/coordinate_transformer/test/test_coordinate_transformer.cpp" line="388" status="run" result="completed" time="0.006" timestamp="2025-04-11T15:45:05.084" classname="coordinate_transformer.CoordinateTransformerTest" />
+  </testsuite>
+</testsuites>

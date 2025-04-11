@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20250411-0900-Experimental"
+	Name="user-pc"
+	Generator="ctest-3.28.3"
+	CompilerName="/usr/bin/c++"
+	CompilerVersion="13.3.0"
+	OSName="Linux"
+	Hostname="user-pc"
+	OSRelease="6.11.0-21-generic"
+	OSVersion="#21~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Feb 24 16:52:15 UTC 2"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="AuthenticAMD"
+	VendorID="Advanced Micro Devices"
+	FamilyID="23"
+	ModelID="104"
+	ProcessorCacheSize="512"
+	NumberOfLogicalCPU="12"
+	NumberOfPhysicalCPU="6"
+	TotalVirtualMemory="4095"
+	TotalPhysicalMemory="9787"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="1796.69"
+	>
+	<Testing>
+		<StartDateTime>Apr 11 14:00 +05</StartDateTime>
+		<StartTestTime>1744362044</StartTestTime>
+		<TestList>
+			<Test>./test_coordinate_transformer</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>test_coordinate_transformer</Name>
+			<Path>.</Path>
+			<FullName>./test_coordinate_transformer</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/user/ros2_ws/build/coordinate_transformer/test_results/coordinate_transformer/test_coordinate_transformer.gtest.xml" "--package-name" "coordinate_transformer" "--output-file" "/home/user/ros2_ws/build/coordinate_transformer/ament_cmake_gtest/test_coordinate_transformer.txt" "--command" "/home/user/ros2_ws/build/coordinate_transformer/test_coordinate_transformer" "--gtest_output=xml:/home/user/ros2_ws/build/coordinate_transformer/test_results/coordinate_transformer/test_coordinate_transformer.gtest.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.259162</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/user/ros2_ws/build/coordinate_transformer/test_results/coordinate_transformer/test_coordinate_transformer.gtest.xml" "--package-name" "coordinate_transformer" "--output-file" "/home/user/ros2_ws/build/coordinate_transformer/ament_cmake_gtest/test_coordinate_transformer.txt" "--command" "/home/user/ros2_ws/build/coordinate_transformer/test_coordinate_transformer" "--gtest_output=xml:/home/user/ros2_ws/build/coordinate_transformer/test_results/coordinate_transformer/test_coordinate_transformer.gtest.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/user/ros2_ws/build/coordinate_transformer':
+ - /home/user/ros2_ws/build/coordinate_transformer/test_coordinate_transformer --gtest_output=xml:/home/user/ros2_ws/build/coordinate_transformer/test_results/coordinate_transformer/test_coordinate_transformer.gtest.xml
+[==========] Running 6 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 6 tests from CoordinateTransformerTest
+[ RUN      ] CoordinateTransformerTest.ConvertSuccess
+[       OK ] CoordinateTransformerTest.ConvertSuccess (17 ms)
+[ RUN      ] CoordinateTransformerTest.OutOfBounds
+[       OK ] CoordinateTransformerTest.OutOfBounds (7 ms)
+[ RUN      ] CoordinateTransformerTest.TransformNotFound
+[ERROR] [1744362044.531873010] [test_node]: Transform nonexistent_frame-&gt;frameB not found
+[       OK ] CoordinateTransformerTest.TransformNotFound (6 ms)
+[ RUN      ] CoordinateTransformerTest.SameFrame
+[       OK ] CoordinateTransformerTest.SameFrame (6 ms)
+[ RUN      ] CoordinateTransformerTest.SourceFrameNotFound
+[ERROR] [1744362044.545321045] [test_node]: Transform nonexistent_frame-&gt;frameB not found
+[       OK ] CoordinateTransformerTest.SourceFrameNotFound (6 ms)
+[ RUN      ] CoordinateTransformerTest.TargetFrameNotFound
+[ERROR] [1744362044.552292534] [test_node]: Transform frameA-&gt;nonexistent_frame not found
+[       OK ] CoordinateTransformerTest.TargetFrameNotFound (6 ms)
+[----------] 6 tests from CoordinateTransformerTest (52 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 1 test suite ran. (52 ms total)
+[  PASSED  ] 6 tests.
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/user/ros2_ws/build/coordinate_transformer/test_results/coordinate_transformer/test_coordinate_transformer.gtest.xml'
+-- run_test.py: verify result file '/home/user/ros2_ws/build/coordinate_transformer/test_results/coordinate_transformer/test_coordinate_transformer.gtest.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>gtest</Label>
+			</Labels>
+		</Test>
+		<EndDateTime>Apr 11 14:00 +05</EndDateTime>
+		<EndTestTime>1744362044</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

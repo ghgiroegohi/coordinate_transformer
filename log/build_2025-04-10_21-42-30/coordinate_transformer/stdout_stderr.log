@@ -1,0 +1,76 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found rclcpp: 28.1.8 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+-- Found tf2: 0.36.9 (/opt/ros/jazzy/share/tf2/cmake)
+-- Found tf2_ros: 0.36.9 (/opt/ros/jazzy/share/tf2_ros/cmake)
+-- Found tf2_geometry_msgs: 0.36.9 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)
+-- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found ament_cmake_gtest: 2.5.3 (/opt/ros/jazzy/share/ament_cmake_gtest/cmake)
+-- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Configuring done (2.5s)
+-- Generating done (0.0s)
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CATKIN_INSTALL_INTO_PREFIX_ROOT
+
+[0m
+-- Build files have been written to: /home/user/ros2_ws/build/coordinate_transformer
+[ 25%] Built target gtest_main
+[ 50%] Built target gtest
+[ 75%] Built target coordinate_transformer
+[ 87%] [32mBuilding CXX object CMakeFiles/test_coordinate_transformer.dir/test/test_coordinate_transformer.cpp.o[0m
+[100%] [32m[1mLinking CXX executable test_coordinate_transformer[0m
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «YAML::detail::node_data::end()»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «vtable for YAML::Exception»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «YAML::detail::node_data::empty_scalar[abi:cxx11]()»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «YAML::detail::node_data::set_null()»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «vtable for YAML::BadConversion»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «YAML::detail::memory::create_node()»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «typeinfo for YAML::BadSubscript»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «YAML::detail::node_data::convert_to_map(std::shared_ptr<YAML::detail::memory_holder> const&)»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «YAML::BadConversion::~BadConversion()»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «vtable for YAML::RepresentationException»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «YAML::detail::node_data::mark_defined()»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «typeinfo for YAML::InvalidNode»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «YAML::detail::node_data::set_scalar(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «YAML::BadSubscript::~BadSubscript()»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «YAML::detail::node_data::insert_map_pair(YAML::detail::node&, YAML::detail::node&)»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «YAML::detail::node_data::begin()»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «vtable for YAML::BadSubscript»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «YAML::detail::memory_holder::merge(YAML::detail::memory_holder&)»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «YAML::LoadFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «YAML::InvalidNode::~InvalidNode()»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «vtable for YAML::InvalidNode»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «typeinfo for YAML::BadConversion»
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/test_coordinate_transformer.dir/build.make:212: test_coordinate_transformer] Ошибка 1
+gmake[1]: *** [CMakeFiles/Makefile2:185: CMakeFiles/test_coordinate_transformer.dir/all] Ошибка 2
+gmake: *** [Makefile:146: all] Ошибка 2

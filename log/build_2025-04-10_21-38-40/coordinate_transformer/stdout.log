@@ -1,0 +1,6 @@
+[ 25%] Built target gtest_main
+[ 50%] Built target gtest
+[ 62%] [32mBuilding CXX object CMakeFiles/coordinate_transformer.dir/src/coordinate_transformer.cpp.o[0m
+[ 75%] [32m[1mLinking CXX shared library libcoordinate_transformer.so[0m
+[ 75%] Built target coordinate_transformer
+[ 87%] [32mBuilding CXX object CMakeFiles/test_coordinate_transformer.dir/test/test_coordinate_transformer.cpp.o[0m

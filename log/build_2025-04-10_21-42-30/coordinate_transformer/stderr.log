@@ -1,0 +1,32 @@
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CATKIN_INSTALL_INTO_PREFIX_ROOT
+
+[0m
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «YAML::detail::node_data::end()»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «vtable for YAML::Exception»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «YAML::detail::node_data::empty_scalar[abi:cxx11]()»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «YAML::detail::node_data::set_null()»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «vtable for YAML::BadConversion»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «YAML::detail::memory::create_node()»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «typeinfo for YAML::BadSubscript»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «YAML::detail::node_data::convert_to_map(std::shared_ptr<YAML::detail::memory_holder> const&)»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «YAML::BadConversion::~BadConversion()»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «vtable for YAML::RepresentationException»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «YAML::detail::node_data::mark_defined()»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «typeinfo for YAML::InvalidNode»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «YAML::detail::node_data::set_scalar(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «YAML::BadSubscript::~BadSubscript()»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «YAML::detail::node_data::insert_map_pair(YAML::detail::node&, YAML::detail::node&)»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «YAML::detail::node_data::begin()»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «vtable for YAML::BadSubscript»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «YAML::detail::memory_holder::merge(YAML::detail::memory_holder&)»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «YAML::LoadFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «YAML::InvalidNode::~InvalidNode()»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «vtable for YAML::InvalidNode»
+/usr/bin/ld: libcoordinate_transformer.so: неопределённая ссылка на «typeinfo for YAML::BadConversion»
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/test_coordinate_transformer.dir/build.make:212: test_coordinate_transformer] Ошибка 1
+gmake[1]: *** [CMakeFiles/Makefile2:185: CMakeFiles/test_coordinate_transformer.dir/all] Ошибка 2
+gmake: *** [Makefile:146: all] Ошибка 2

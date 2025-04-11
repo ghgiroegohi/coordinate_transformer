@@ -1,0 +1,13 @@
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CATKIN_INSTALL_INTO_PREFIX_ROOT
+
+[0m
+In file included from [01m[K/home/user/ros2_ws/src/coordinate_transformer/src/coordinate_transformer.cpp:1[m[K:
+[01m[K/home/user/ros2_ws/src/coordinate_transformer/include/coordinate_transformer/coordinate_transformer.hpp:113:2:[m[K [01;31m[Kerror: [m[K#endif without #if
+  113 | #[01;31m[Kendif[m[K // COORDINATE_TRANSFORMER_HPP
+      |  [01;31m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/coordinate_transformer.dir/build.make:76: CMakeFiles/coordinate_transformer.dir/src/coordinate_transformer.cpp.o] Ошибка 1
+gmake[1]: *** [CMakeFiles/Makefile2:157: CMakeFiles/coordinate_transformer.dir/all] Ошибка 2
+gmake: *** [Makefile:146: all] Ошибка 2
